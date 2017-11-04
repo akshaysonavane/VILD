@@ -2,9 +2,13 @@
 <html>
   <head>
     <script src="VILD.js"></script>
+
   </head>
-  <body>
-    <a-scene>
+  <body >
+
+  <VILD-view>
+
+    
       <vild-bg color="#03A9F4" ></vild-bg>
       <a-cube color="#fff5ff" 
              width="1" 
@@ -22,9 +26,42 @@
              position=" 1 2 -5"
              rotation="0 45 0"
             ></a-cube>
-      <a-camera position=" 1 6 4">
-          <a-cursor color="#ffffff"></a-cursor>
-        </a-camera>
-    </a-scene>
+
+     <a-cone color="#fff5ff" 
+             
+             height="2" 
+             depth="1"
+             radius-bottom="0.3" 
+             radius-top="0"
+             position=" 4 2 -5"
+             rotation="0 45 0"
+            ></a-cone>
+
+
+            <!-- Basic cylinder. -->
+<a-cylinder color="crimson"
+ height="3" radius="1.5" position=" 8 2 -5"></a-cylinder>
+<!-- Hexagon. -->
+<a-cylinder color="cyan" segments-radial="8" position=" 6 2 -5"></a-cylinder>
+<!-- Pac-man. -->
+<a-cylinder color="yellow" theta-start="50" position=" 12 2 -5" theta-length="280" side="double"></a-cylinder>
+<!-- Green pipe. -->
+<a-cylinder color="green" position=" 20 2 -5"   open-ended="true"></a-cylinder> 
+
+
+
+<a-plane color="orange" height="2" width="2"  position=" 3 2 -5"  rotation="-80 0 0 "></a-plane>
+
+<a-sphere color="yellow" radius="5"></a-sphere>
+
+
+
+
+
+
+      <VILD-cam position=" 1 6 4">
+          <VILD-pointer color="#fffff"></VILD-pointer>
+        </VILD-cam>
+    </VILD-view>
   </body>
 </html>
